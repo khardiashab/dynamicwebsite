@@ -1,0 +1,29 @@
+<section>
+  <div id="services" class="py-4"></div>
+  <div class="container justify-content-center text-center align-items-center py-4">
+    <h2 class="text-center text-capitalize">Services we Provided</h2>
+    <br>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+      <%  for (const service of services) { %>
+        <div class="col p-2">
+          <div class="border p-2 p-lg-4">
+            <div class="service__img text-center mb-2">
+              <i class="<%= service.iconUrl%>"></i>
+            </div>
+            <div class="card-body text-start">
+              <h5 class="text-capitalize"><%= service.title%></h5>
+              <p class="p-0 text-muted"> <%= service.description %></p>
+              <div class="links d-flex justify-content-start">
+                <a href="<%= service.links[0].url%>" class="fw-bold me-2 me-lg-4"><%= service.links[0].name%></a>
+                <a href="<%= service.links[1].url%>" class="fw-bold me-2 me-lg-4"><%= service.links[1].name%></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% } %>
+
+    </div>
+  </div>
+
+
+</section>

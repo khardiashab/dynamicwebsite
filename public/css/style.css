@@ -1,0 +1,32 @@
+.img__link{
+  height: 550px;
+}
+.service__img{
+  height: 100px;
+}
+.service__img > i{
+  font-size: 100px;
+}
+
+.contact-us{
+  width: 600px;
+  
+}
+.album img{
+ transition: all 200ms ease-in;
+}
+.album img:hover{
+ transform: scale(1.08);
+ box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+ box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+
+  @media screen and (max-width : 550px){
+    .img__link{
+      height: 350px;
+    }
+    .contact-us{
+      width: 100%;
+    }
+  }
